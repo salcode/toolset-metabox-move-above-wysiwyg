@@ -4,7 +4,7 @@ WordPress plugin to allow moving metaboxes created with the Toolset plugin above
 
 ## Example Implementation
 
-Add the following code to `functions.php` or a [mu-plugin](https://codex.wordpress.org/Must_Use_Plugins)].
+Add the following code to `functions.php` or a [mu-plugin](https://codex.wordpress.org/Must_Use_Plugins).
 
 ```
 add_filter( 'fe_tmm_move_metabox_after_title_ids', function ( $group_ids ) {
