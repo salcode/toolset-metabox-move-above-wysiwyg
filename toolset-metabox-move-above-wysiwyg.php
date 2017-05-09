@@ -3,7 +3,6 @@
  * Plugin Name: Move Toolset Metabox Above WYSIWYG Editor
  * Plugin URI: http://salferrarello.com/move-toolset-metabox-above-wysiwyg-editor/
  * Description: Allows moving metaboxes created with the Toolset plugin above the WYSIWYG editor, with the filter <strong>fe_tmm_move_metabox_after_title_ids</strong>. Example: <code>add_filter( 'fe_tmm_move_metabox_after_title_ids', function ( $ids ) { $ids[] = 1813; return $group_ids; } );</code>
- *
  * Version: 1.0.0
  * Author: Sal Ferrarello
  * Author URI: http://salferrarello.com/
