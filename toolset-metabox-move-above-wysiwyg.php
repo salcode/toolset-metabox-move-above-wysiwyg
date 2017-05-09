@@ -4,11 +4,18 @@
  * Plugin URI: http://salferrarello.com/move-toolset-metabox-above-wysiwyg-editor/
  * Description: Allows moving metaboxes created with the Toolset plugin above the WYSIWYG editor, with the filter <strong>fe_tmm_move_metabox_after_title_ids</strong>. Example: <code>add_filter( 'fe_tmm_move_metabox_after_title_ids', function ( $ids ) { $ids[] = 1813; return $group_ids; } );</code>
  *
- * Version: 0.1.0
+ * Version: 1.0.0
  * Author: Sal Ferrarello
  * Author URI: http://salferrarello.com/
  * Text Domain: toolset-metabox-move-above-wysiwyg
  * Domain Path: /languages
+ *
+ * Example filter to move Toolset metaboxes 1813 and 1820 above the WYSIWYG editor.
+ * add_filter( 'fe_tmm_move_metabox_after_title_ids', function ( $group_ids ) {
+ * 	$group_ids[] = 1813;  // Move group id 1813 above the WYSIWYG editor.
+ * 	$group_ids[] = 1820;  // Move group id 1820 above the WYSIWYG editor.
+ * 	return $group_ids;
+ * } );
  *
  * @package toolset-metabox-move-above-wysiwyg
  */
@@ -17,13 +24,6 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
-
-// Example filter to modify which Toolset metaboxes to move after the title.
-add_filter( 'fe_tmm_move_metabox_after_title_ids', function ( $group_ids ) {
-	$group_ids[] = 1813;  // Move group id 1813 above the WYSIWYG editor.
-	$group_ids[] = 1820;  // Move group id 1820 above the WYSIWYG editor.
-	return $group_ids;
-} );
 
 add_action( 'edit_form_after_title', 'fe_tmm_move_metabox_after_title' );
 /**
