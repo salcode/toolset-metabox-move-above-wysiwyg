@@ -17,6 +17,10 @@ add_filter( 'fe_tmm_move_metabox_after_title_ids', function ( $group_ids ) {
 } );
 ```
 
+## More Information
+
+See the blog post [Move Toolset Metabox Above WYSIWYG Editor](http://salferrarello.com/move-toolset-metabox-above-wysiwyg-editor/).
+
 ## Credits
 
 [Sal Ferrarello](https://salferrarello.com) / [@salcode](https://twitter.com/salcode)
